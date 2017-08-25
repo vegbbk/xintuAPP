@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="commonDressLJJID" id="KGk-i7-Jjw" customClass="commonDressManageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="134"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="家" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHY-en-32d">
+                        <rect key="frame" x="193" y="19" width="164" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="FYH-Xf-zvo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EdB-UC-tpZ">
+                        <rect key="frame" x="7" y="114" width="70" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="9uT-lW-hVl"/>
+                            <constraint firstAttribute="height" constant="17" id="neB-wU-3XP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="设为默认" image="首页_常用地址_不默认">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="defaultClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1E3-rP-0di"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBP-zu-L1x">
+                        <rect key="frame" x="322" y="114" width="46" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="ECH-Ar-mYd"/>
+                            <constraint firstAttribute="width" constant="46" id="gSZ-zs-ZNF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="删除" image="首页_常用地址_删除">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="deleteClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="7Mo-Ee-eUF"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wY-8c-Pmy">
+                        <rect key="frame" x="0.0" y="101" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="3HM-sQ-oGR"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页_添加地址_选图标_上学" translatesAutoresizingMaskIntoConstraints="NO" id="Dl2-49-Oqj">
+                        <rect key="frame" x="153" y="15" width="28" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="KRV-6j-dA0"/>
+                            <constraint firstAttribute="width" constant="28" id="ogM-QI-WYY"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JMq-nE-FP4">
+                        <rect key="frame" x="186" y="12" width="2" height="35"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="2" id="sys-wy-fHk"/>
+                            <constraint firstAttribute="height" constant="35" id="yYN-mI-rzn"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重庆市江北区五里店阳光明日城市重庆市江北区五里 店阳光明日城市" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fC-gE-eYW">
+                        <rect key="frame" x="16" y="56" width="343" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmH-fq-bxp">
+                        <rect key="frame" x="262" y="114" width="46" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="9Bg-Yu-SFO"/>
+                            <constraint firstAttribute="height" constant="16" id="ceF-Cq-S9T"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="编辑" image="首页_常用地址_编辑">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="writeClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BFx-DO-hI3"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DBP-zu-L1x" firstAttribute="leading" secondItem="fmH-fq-bxp" secondAttribute="trailing" constant="14" id="4rD-bu-w7j"/>
+                    <constraint firstItem="JMq-nE-FP4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="7ZJ-li-Ero"/>
+                    <constraint firstAttribute="trailing" secondItem="DBP-zu-L1x" secondAttribute="trailing" constant="7" id="9A2-mV-ggL"/>
+                    <constraint firstItem="DBP-zu-L1x" firstAttribute="top" secondItem="3wY-8c-Pmy" secondAttribute="bottom" constant="12" id="FEG-Pl-SGY"/>
+                    <constraint firstItem="6fC-gE-eYW" firstAttribute="top" secondItem="Dl2-49-Oqj" secondAttribute="bottom" constant="13" id="MSt-dO-zkb"/>
+                    <constraint firstItem="lHY-en-32d" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="11" id="Mgb-ID-GDE"/>
+                    <constraint firstItem="Dl2-49-Oqj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="TOr-nU-lxY"/>
+                    <constraint firstAttribute="bottom" secondItem="3wY-8c-Pmy" secondAttribute="bottom" constant="32" id="UbK-e1-suV"/>
+                    <constraint firstItem="lHY-en-32d" firstAttribute="leading" secondItem="JMq-nE-FP4" secondAttribute="trailing" constant="5" id="Vh8-PX-n9z"/>
+                    <constraint firstItem="6fC-gE-eYW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="cj6-dU-lKc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="3wY-8c-Pmy" secondAttribute="trailing" constant="-8" id="f5u-ZM-pBH"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6fC-gE-eYW" secondAttribute="trailing" constant="8" id="lWP-sF-hRC"/>
+                    <constraint firstItem="3wY-8c-Pmy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="pdn-zB-Kcx"/>
+                    <constraint firstItem="3wY-8c-Pmy" firstAttribute="top" secondItem="6fC-gE-eYW" secondAttribute="bottom" constant="11" id="pfI-qO-Fat"/>
+                    <constraint firstItem="JMq-nE-FP4" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="pt4-js-uX5"/>
+                    <constraint firstItem="EdB-UC-tpZ" firstAttribute="top" secondItem="3wY-8c-Pmy" secondAttribute="bottom" constant="12" id="qrv-6v-6Sc"/>
+                    <constraint firstItem="EdB-UC-tpZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="sPD-HP-YLW"/>
+                    <constraint firstItem="fmH-fq-bxp" firstAttribute="top" secondItem="3wY-8c-Pmy" secondAttribute="bottom" constant="12" id="vqy-Zs-OOs"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="lHY-en-32d" secondAttribute="trailing" constant="10" id="yrq-vu-ffJ"/>
+                    <constraint firstItem="JMq-nE-FP4" firstAttribute="leading" secondItem="Dl2-49-Oqj" secondAttribute="trailing" constant="5" id="zHW-A9-MUg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="defaultBtn" destination="EdB-UC-tpZ" id="up5-hL-ieT"/>
+                <outlet property="deleteBtn" destination="DBP-zu-L1x" id="cCk-Rd-c8K"/>
+                <outlet property="dressLabel" destination="6fC-gE-eYW" id="4T8-Cq-4FZ"/>
+                <outlet property="headImage" destination="Dl2-49-Oqj" id="LQm-4s-03C"/>
+                <outlet property="titleLabel" destination="lHY-en-32d" id="KT4-An-1tQ"/>
+                <outlet property="writeBtn" destination="fmH-fq-bxp" id="9hE-m1-ktX"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="首页_常用地址_不默认" width="13" height="11"/>
+        <image name="首页_常用地址_删除" width="15" height="14"/>
+        <image name="首页_常用地址_编辑" width="14" height="14"/>
+        <image name="首页_添加地址_选图标_上学" width="27" height="27"/>
+    </resources>
+</document>

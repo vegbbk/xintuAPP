@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="dressColloctID" id="gTV-IL-0wX" customClass="dressSelctCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="99" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="99" height="72"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页_添加地址_选图标_购物" translatesAutoresizingMaskIntoConstraints="NO" id="BDA-pZ-ST0">
+                        <rect key="frame" x="35" y="8" width="28" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="lMZ-2O-F5k"/>
+                            <constraint firstAttribute="width" constant="28" id="pOI-JG-n6s"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="购物" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kki-eW-eOE">
+                        <rect key="frame" x="0.0" y="43" width="99" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="6bH-rG-ob3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Kki-eW-eOE" secondAttribute="trailing" id="2Xt-Ma-NCP"/>
+                <constraint firstItem="BDA-pZ-ST0" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="8Bt-q2-Crt"/>
+                <constraint firstItem="Kki-eW-eOE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BqQ-yj-D2v"/>
+                <constraint firstItem="BDA-pZ-ST0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="roV-ZB-iJJ"/>
+                <constraint firstItem="Kki-eW-eOE" firstAttribute="top" secondItem="BDA-pZ-ST0" secondAttribute="bottom" constant="7" id="shv-6Y-5S4"/>
+            </constraints>
+            <size key="customSize" width="99" height="72"/>
+            <connections>
+                <outlet property="headImage" destination="BDA-pZ-ST0" id="Pin-PU-ysW"/>
+                <outlet property="nameLabel" destination="Kki-eW-eOE" id="kog-na-xrt"/>
+            </connections>
+            <point key="canvasLocation" x="49.5" y="63"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="首页_添加地址_选图标_购物" width="27" height="27"/>
+    </resources>
+</document>
