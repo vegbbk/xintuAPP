@@ -114,7 +114,22 @@
     if(model.strokeType.integerValue==5){
         self.cancelOrderBtn.hidden = YES;
         self.rightImg.hidden = NO;
-        self.rightImg.image = [UIImage imageNamed:@"学生单1"];
+        switch (model.status.integerValue) {
+            case 0:
+            self.rightImg.image = [UIImage imageNamed:@"已取消1"];
+                break;
+            case 1:
+            self.rightImg.image = [UIImage imageNamed:@"未出行1"];
+                break;
+            case 2:
+            self.rightImg.image = [UIImage imageNamed:@"行程中1"];
+                break;
+            case 3:
+            self.rightImg.image = [UIImage imageNamed:@"已完成112"];
+                break;
+            default:
+                break;
+        }
     }
     [self.headImageView sd_setImageWithURL:[NSURL URLWithString:HTTP_URLIP(model.driverHeadImg)] placeholderImage:[UIImage imageNamed:defaultHeadName]];
     self.nameLabel.text = model.driverName;

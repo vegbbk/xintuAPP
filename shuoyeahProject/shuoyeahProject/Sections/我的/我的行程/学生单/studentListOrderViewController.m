@@ -151,6 +151,7 @@
     [hedImg addSubview:_phoneLabel];
     
     _statuImg = [myLjjTools createImageViewWithFrame:CGRectMake(SCREEN_WIDTH-57-24, 71, 57, 57) andImageName:@"" andBgColor:nil];
+    _statuImg.hidden = YES;
     [hedImg addSubview:_statuImg];
     
     _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(hedImg.frame), SCREEN_WIDTH, SCREEN_HEIGHT-CGRectGetMaxY(hedImg.frame)) style:UITableViewStyleGrouped];
@@ -231,6 +232,9 @@
             if(indexPath.row==0){
                 _nameLabel = [myLjjTools createLabelWithFrame:CGRectMake(100, 10, SCREEN_WIDTH-110, 30) andTitle:@"" andTitleFont:FontSize(15) andTitleColor:rgb(170, 170, 170) andTextAlignment:NSTextAlignmentRight andBgColor:nil];
                 [cell addSubview:_nameLabel];
+                
+                UILabel * ddd = [myLjjTools createLabelWithFrame:CGRectMake(0, 10, 110, 30) andTitle:@"    学生姓名" andTitleFont:FontSize(15) andTitleColor:rgb(170, 170, 170) andTextAlignment:NSTextAlignmentLeft andBgColor:WHITEColor];
+                [cell addSubview:ddd];
             }
         }
         cell.selectionStyle  =UITableViewCellSelectionStyleNone;
