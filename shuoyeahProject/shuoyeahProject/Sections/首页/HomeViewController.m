@@ -184,7 +184,7 @@
 #pragma mark -----------设置首页背景图-------------
 -(void)setBackImg{
 
-    UIImageView * backImageView = [myLjjTools createImageViewWithFrame:CGRectMake(0, -64, SCREEN_WIDTH, SCREEN_HEIGHT-44+64) andImage:[UIImage imageNamed:@"首页_bg"] andBgColor:nil];
+    UIImageView * backImageView = [myLjjTools createImageViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) andImage:[UIImage imageNamed:@"首页_bg"] andBgColor:nil];
     [self.view addSubview:backImageView];
 
 }
@@ -201,13 +201,13 @@
 
     NSArray * picArr = @[@"订机票",@"接送机",@"医院",@"周末出游",@"商务用车",@"接送学生"];
     int maxNum;
-  
+    CGFloat HEITT = SCREEN_HEIGHT*423/1334.0-44;
     if(_itemDataArr.count>3){
         maxNum = 2;
-        hei = 160;
+        hei = HEITT;
     }else{
         maxNum=1;
-        hei= 80;
+        hei= HEITT/2.0;
     }
     backView= [myLjjTools createViewWithFrame:CGRectMake(0, SCREEN_HEIGHT-hei-44-5, SCREEN_WIDTH, hei) andBgColor:CLEARCOLOR];
     [_scroll addSubview:backView];
