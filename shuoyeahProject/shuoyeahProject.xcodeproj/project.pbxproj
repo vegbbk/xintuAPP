@@ -171,8 +171,6 @@
 		5D3C12371E791E3C004BD4CE /* EaseRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3C11BD1E791E3C004BD4CE /* EaseRecordView.m */; };
 		5D3C12381E791E3C004BD4CE /* EaseConversationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3C11C01E791E3C004BD4CE /* EaseConversationCell.m */; };
 		5D3C12391E791E3C004BD4CE /* EaseUIResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5D3C11C21E791E3C004BD4CE /* EaseUIResource.bundle */; };
-		5D3FFC201E792262007504DC /* HyphenateLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF0B8701E792246004A1A4B /* HyphenateLite.framework */; };
-		5D3FFC211E792262007504DC /* HyphenateLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF0B8701E792246004A1A4B /* HyphenateLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5D414DE31DF16F3E003727BE /* NSString+ljjProStr.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D414DE21DF16F3E003727BE /* NSString+ljjProStr.m */; };
 		5D4151ED1E6FE56E00CF09FF /* ZXUploadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4151EC1E6FE56E00CF09FF /* ZXUploadImage.m */; };
 		5D4584681EF0CF3500064469 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4584671EF0CF3500064469 /* GLKit.framework */; };
@@ -233,6 +231,9 @@
 		5D6AA7561EC2AF0000B4FA77 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D6AA7551EC2AF0000B4FA77 /* UserNotifications.framework */; };
 		5D6AA7581EC2AF1600B4FA77 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D6AA7571EC2AF1600B4FA77 /* libresolv.tbd */; };
 		5D6B19771E8A626F000975F4 /* baseLJJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6B19761E8A626F000975F4 /* baseLJJViewController.m */; };
+		5D738CFB1F56653D004EB06D /* HyphenateLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D738CFA1F56653D004EB06D /* HyphenateLite.framework */; };
+		5D738CFC1F566546004EB06D /* HyphenateLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D738CFA1F56653D004EB06D /* HyphenateLite.framework */; };
+		5D738CFD1F566546004EB06D /* HyphenateLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D738CFA1F56653D004EB06D /* HyphenateLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5D7A2B931E95E01F00B90442 /* xialaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7A2B921E95E01F00B90442 /* xialaView.m */; };
 		5D7B92871E76817B001D8D37 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D7B92861E76817B001D8D37 /* libsqlite3.tbd */; };
 		5D7B92891E768189001D8D37 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D7B92881E768189001D8D37 /* CoreGraphics.framework */; };
@@ -432,7 +433,6 @@
 		5DB3C7791F039E2B0059BF4A /* searchLJJText.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB3C7781F039E2B0059BF4A /* searchLJJText.m */; };
 		5DBF8BF71EDAC48500930F3C /* LBLaunchImageAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF8BF61EDAC48500930F3C /* LBLaunchImageAdView.m */; };
 		5DC9461A1DE3F3DC00991463 /* UIButton+ljjClick.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC946191DE3F3DC00991463 /* UIButton+ljjClick.m */; };
-		5DF0B8711E792246004A1A4B /* HyphenateLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF0B8701E792246004A1A4B /* HyphenateLite.framework */; };
 		AE4C692B40DB22F033BD71BE /* Pods_shuoyeahProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429B8843A6E58EAACDE11682 /* Pods_shuoyeahProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -443,7 +443,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5D3FFC211E792262007504DC /* HyphenateLite.framework in Embed Frameworks */,
+				5D738CFD1F566546004EB06D /* HyphenateLite.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -962,6 +962,7 @@
 		5D6AA7571EC2AF1600B4FA77 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		5D6B19751E8A626F000975F4 /* baseLJJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseLJJViewController.h; sourceTree = "<group>"; };
 		5D6B19761E8A626F000975F4 /* baseLJJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseLJJViewController.m; sourceTree = "<group>"; };
+		5D738CFA1F56653D004EB06D /* HyphenateLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HyphenateLite.framework; sourceTree = "<group>"; };
 		5D7A2B911E95E01F00B90442 /* xialaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xialaView.h; sourceTree = "<group>"; };
 		5D7A2B921E95E01F00B90442 /* xialaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xialaView.m; sourceTree = "<group>"; };
 		5D7B92861E76817B001D8D37 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -1326,7 +1327,6 @@
 		5DBF8BF61EDAC48500930F3C /* LBLaunchImageAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLaunchImageAdView.m; sourceTree = "<group>"; };
 		5DC946181DE3F3DC00991463 /* UIButton+ljjClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+ljjClick.h"; path = "../UIButton+ljjClick.h"; sourceTree = "<group>"; };
 		5DC946191DE3F3DC00991463 /* UIButton+ljjClick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+ljjClick.m"; path = "../UIButton+ljjClick.m"; sourceTree = "<group>"; };
-		5DF0B8701E792246004A1A4B /* HyphenateLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HyphenateLite.framework; sourceTree = "<group>"; };
 		7E1CB5046B3FEFF602D82EE8 /* Pods-shuoyeahProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shuoyeahProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shuoyeahProject/Pods-shuoyeahProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1358,26 +1358,26 @@
 				5D5770651E77D0D300238C70 /* OpenGLES.framework in Frameworks */,
 				5D3B5EC71EFCBD8D00FF82DF /* AMapSearchKit.framework in Frameworks */,
 				5D57704C1E77C74B00238C70 /* libstdc++.6.0.9.tbd in Frameworks */,
+				5D738CFB1F56653D004EB06D /* HyphenateLite.framework in Frameworks */,
 				5D57704A1E77C72B00238C70 /* JavaScriptCore.framework in Frameworks */,
 				5D5770481E77C72100238C70 /* AdSupport.framework in Frameworks */,
 				5D5770461E77C71700238C70 /* Security.framework in Frameworks */,
 				5D5770441E77C70400238C70 /* CoreLocation.framework in Frameworks */,
 				5D5770421E77C6F000238C70 /* QuartzCore.framework in Frameworks */,
 				5D5770401E77C6D300238C70 /* Foundation.framework in Frameworks */,
-				5D3FFC201E792262007504DC /* HyphenateLite.framework in Frameworks */,
 				5D5770A41E77E72A00238C70 /* libWeChatSDK.a in Frameworks */,
 				5D57703E1E77C6C100238C70 /* UIKit.framework in Frameworks */,
 				5DA1C2551EA49FD200A0020D /* AMapLocationKit.framework in Frameworks */,
 				5D7B928B1E7681BE001D8D37 /* SystemConfiguration.framework in Frameworks */,
 				5D57718A1E77ED0200238C70 /* libcrypto.a in Frameworks */,
 				5D932A851F09ED9600AD2F72 /* AMapNaviKit.framework in Frameworks */,
+				5D738CFC1F566546004EB06D /* HyphenateLite.framework in Frameworks */,
 				5D7B92911E768216001D8D37 /* libz.tbd in Frameworks */,
 				5D7B928F1E7681E8001D8D37 /* libc++.tbd in Frameworks */,
 				5D7B928D1E7681CD001D8D37 /* CoreTelephony.framework in Frameworks */,
 				5D57718F1E77ED1700238C70 /* AlipaySDK.framework in Frameworks */,
 				5D7B92891E768189001D8D37 /* CoreGraphics.framework in Frameworks */,
 				5D7B92871E76817B001D8D37 /* libsqlite3.tbd in Frameworks */,
-				5DF0B8711E792246004A1A4B /* HyphenateLite.framework in Frameworks */,
 				5D57718B1E77ED0200238C70 /* libssl.a in Frameworks */,
 				AE4C692B40DB22F033BD71BE /* Pods_shuoyeahProject.framework in Frameworks */,
 			);
@@ -3435,7 +3435,7 @@
 		5DF0B86F1E792246004A1A4B /* HyphenateSDK */ = {
 			isa = PBXGroup;
 			children = (
-				5DF0B8701E792246004A1A4B /* HyphenateLite.framework */,
+				5D738CFA1F56653D004EB06D /* HyphenateLite.framework */,
 			);
 			path = HyphenateSDK;
 			sourceTree = "<group>";
@@ -4153,8 +4153,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shupyeah.xintu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7671c427-ed35-426a-9029-6eeaed2fe3dc";
-				PROVISIONING_PROFILE_SPECIFIER = xintuAPP080402;
+				PROVISIONING_PROFILE = "bc5ced25-9644-4d0e-9644-a93464a587c8";
+				PROVISIONING_PROFILE_SPECIFIER = xintuUpToStore;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -4221,8 +4221,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shupyeah.xintu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7671c427-ed35-426a-9029-6eeaed2fe3dc";
-				PROVISIONING_PROFILE_SPECIFIER = xintuAPP080402;
+				PROVISIONING_PROFILE = "bc5ced25-9644-4d0e-9644-a93464a587c8";
+				PROVISIONING_PROFILE_SPECIFIER = xintuUpToStore;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

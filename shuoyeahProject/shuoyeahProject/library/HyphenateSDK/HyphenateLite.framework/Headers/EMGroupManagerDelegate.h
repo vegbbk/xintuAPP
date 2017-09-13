@@ -28,6 +28,7 @@ typedef enum{
 }EMGroupLeaveReason;
 
 @class EMGroup;
+@class EMGroupSharedFile;
 
 /*!
  *  \~chinese
@@ -288,6 +289,86 @@ typedef enum{
 - (void)groupOwnerDidUpdate:(EMGroup *)aGroup
                    newOwner:(NSString *)aNewOwner
                    oldOwner:(NSString *)aOldOwner;
+
+/*!
+ *  \~chinese
+ *  有用户加入群组
+ *
+ *  @param aGroup       加入的群组
+ *  @param aUsername    加入者
+ *
+ *  \~english
+ *  Delegate method will be invoked when a user joins a group.
+ *
+ *  @param aGroup       Joined group
+ *  @param aUsername    The user who joined group
+ */
+- (void)userDidJoinGroup:(EMGroup *)aGroup
+                    user:(NSString *)aUsername;
+
+/*!
+ *  \~chinese
+ *  有用户离开群组
+ *
+ *  @param aGroup       离开的群组
+ *  @param aUsername    离开者
+ *
+ *  \~english
+ *  Delegate method will be invoked when a user leaves a group.
+ *
+ *  @param aGroup       Left group
+ *  @param aUsername    The user who leaved group
+ */
+- (void)userDidLeaveGroup:(EMGroup *)aGroup
+                     user:(NSString *)aUsername;
+
+/*!
+ *  \~chinese
+ *  群公告有更新
+ *
+ *  @param aGroup           群组
+ *  @param aAnnouncement    群公告
+ *
+ *  \~english
+ *  Delegate method will be invoked when a user update the announcement from a group.
+ *
+ *  @param aGroup           Group
+ *  @param aAnnouncement    Announcement
+ */
+- (void)groupAnnouncementDidUpdate:(EMGroup *)aGroup
+                      announcement:(NSString *)aAnnouncement;
+
+/*!
+ *  \~chinese
+ *  有用户上传群共享文件
+ *
+ *  @param aGroup       群组
+ *  @param aSharedFile  共享文件
+ *
+ *  \~english
+ *  Delegate method will be invoked when a user upload share file to a group.
+ *
+ *  @param aGroup       Group
+ *  @param aSharedFile  Share File
+ */
+- (void)groupFileListDidUpdate:(EMGroup *)aGroup
+               addedSharedFile:(EMGroupSharedFile *)aSharedFile;
+
+/*!
+ *  \~chinese
+ *  有用户删除群共享文件
+ *
+ *  @param aGroup       群组
+ *  @param aFileId      共享文件ID
+ *
+ *  \~english
+ *  Delegate method will be invoked when a user remove share file from a group.
+ *
+ *  @param aGroup       Group
+ *  @param aFileId      File ID
+ */
+- (void)groupFileListDidUpdate:(EMGroup *)aGroup
+             removedSharedFile:(NSString *)aFileId;
 
 #pragma mark - Deprecated methods
 
